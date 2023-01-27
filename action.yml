@@ -32,13 +32,7 @@ inputs:
       A list of additional 'apt' packages to install before running
       sphinx. (Setting this will force-enable 'update' as well.)
     required: false
-  container:
-    description:
-      Run the build in the named container. Must be one of
-      'sphinx5', 'sphinx4', 'pdflatex', or 'default'.
-    required: false
-    default: 'sphinx5'
 runs:
   using: 'docker'
-  image: 'Dockerfile.sphinx5'
+  image: 'Dockerfile'
 
