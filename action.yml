@@ -40,5 +40,5 @@ inputs:
     default: 'sphinx5'
 runs:
   using: 'docker'
-  image: ${{ format('Dockerfile.{0}', inputs.container) }}
+  image: 'Dockerfile.sphinx5'
 
