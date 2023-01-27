@@ -35,9 +35,9 @@ inputs:
   container:
     description:
       Run the build in the named container. Must be one of
-      'sphinx4', 'pdflatex', or 'default'.
+      'sphinx5', 'sphinx4', 'pdflatex', or 'default'.
     required: false
-    default: 'default'
+    default: 'sphinx5'
 runs:
   using: 'docker'
   image: ${{ format('Dockerfile.{0}', inputs.container) }}
